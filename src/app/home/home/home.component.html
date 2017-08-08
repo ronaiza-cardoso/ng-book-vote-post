@@ -1,3 +1,18 @@
-<md-toolbar color="primary">
-  <span>Angular Material Example</span>
-</md-toolbar>  
+<div class="container">
+  <md-toolbar class="toolbar">
+      <span>GameViewer</span>
+  </md-toolbar>
+
+  <md-card>
+    <md-card-content>
+      <p>Post your link</p>
+      <md-input-container>
+        <input mdInput placeholder="Title" #newtitle>
+      </md-input-container>
+      <md-input-container>
+        <input mdInput placeholder="Link" #newlink>
+      </md-input-container>
+    </md-card-content>
+    <button (click)="addArticle(newtitle, newlink)" md-raised-button>Raised button</button>
+  </md-card>
+</div>

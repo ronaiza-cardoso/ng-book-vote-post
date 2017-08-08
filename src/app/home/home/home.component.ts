@@ -9,7 +9,11 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  addArticle(title: HTMLInputElement, link: HTMLInputElement):boolean {
+    console.log(`Adding article title: ${title.value} and link: ${link.value}`);
+    return false;
   }
 
 }
