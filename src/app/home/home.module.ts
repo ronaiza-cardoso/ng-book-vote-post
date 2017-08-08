@@ -5,8 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AppMaterialModule } from '../app-material/app-material.module';
-
-
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   imports: [
@@ -15,6 +14,6 @@ import { AppMaterialModule } from '../app-material/app-material.module';
     AppMaterialModule,
     FormsModule
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent, ArticleComponent]
 })
 export class HomeModule { }

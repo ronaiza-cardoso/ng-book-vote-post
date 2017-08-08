@@ -1,0 +1,13 @@
+<md-card>
+  <md-card-content>
+    <h1>{{ article.title }}</h1>
+    <h2>({{ article.link }})</h2>
+  </md-card-content>
+  <div class="card-counter">
+    <p>{{ article.votes }}</p>
+  </div>
+  <md-card-actions>
+    <button md-button (click)="voteUp()">UPVOTE</button>
+    <button md-button f (click)="voteDown()">DOWNVOTE</button>
+  </md-card-actions>
+</md-card>

@@ -15,4 +15,6 @@
     </md-card-content>
     <button (click)="addArticle(newtitle, newlink)" md-raised-button>Raised button</button>
   </md-card>
+  <br>
+  <app-article *ngFor="let article of articles" [article]="article"></app-article>
 </div>
